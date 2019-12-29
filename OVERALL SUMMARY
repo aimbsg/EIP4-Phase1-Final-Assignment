@@ -1,0 +1,38 @@
+Final Validation accuracy
+
+val_gender_output_acc	85.57%
+val_image_quality_output_acc	58.63%
+val_age_output_acc	40.23%
+val_weight_output_acc	63.44%
+val_bag_output_acc	64.68%
+val_footwear_output_acc	61.56%
+val_pose_output_acc	80.90%
+val_emotion_output_acc	71.73%
+------------------------------
+Average accuracy	65.84%
+------------------------------
+
+Models experimented :
+1. Hand written Sequential-Convolution model - Gave complete control of what is happening in each layer but could not beat the final
+   accuracy when compared to other architectures
+2. ResNet50 (no pre-trained weights)
+3. InceptionResNetV2 (no pre-trained weights)
+
+Activation functions experimented :
+1. ReLU
+2. Sigmoid
+3. Swish
+4. Softmax
+
+Optimizers experimented :
+1. SGD
+2. Adam
+3. Adadelta
+
+Image augmentation strategies experimented :
+1. Horizontal flip
+2. Vertical flip
+3. Feature wise center and standard normalization
+4. Image normalization
+5. Shear range, zoom range and brightness range  
+
